@@ -21,7 +21,7 @@ body {
     place-items: center;
     gap: 30px;
     width: 360px;
-    margin: 50px auto 0px auto;
+    margin: auto;
     padding: 30px;
     border-radius: 25px;
     height: fit-content;
@@ -52,8 +52,17 @@ body {
 }
 
 #profile span a:hover {
-    text-shadow: 1px 1px 0.3em #4b4b4b;
+    text-shadow: 1px 1px 0.3em #b5d3c6;
     transition: 0.4s;
+    color: #a876d7;
+    outline: none;
+}
+
+#profile span a:focus {
+    text-shadow: 1px 1px 0.3em #b5d3c6;
+    transition: 0.2s;
+    color: #a876d7;
+    outline: none;
 }
 
 #links ul {
@@ -80,7 +89,7 @@ body {
     transition: 0.3s;
     background-color: #a0f2ba;
     box-shadow: 0 0 0.9em 0 #a0f2ba;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 #links a:focus {
@@ -133,4 +142,18 @@ footer span {
     padding: 5px 15px;
     font-size: 0.65em;
     color: rgb(219, 187, 239);
+}
+
+@media (max-width: 700px) {
+    * {
+        color: rgb(247, 122, 193);
+    }
+
+    body {
+        background: url(assets/bg-image.svg) no-repeat top center/cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 55px;
+    }
 }
