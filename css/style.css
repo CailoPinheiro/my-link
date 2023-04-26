@@ -7,7 +7,11 @@
 }
 
 
-root {}
+:root {
+    --main-color: #8fdca7;
+    --main-hover-color: #a0f2ba;
+    --minor-color: #dbbbef;
+}
 
 body {
     background: url(../assets/bg-image.svg) no-repeat top center/cover;
@@ -40,14 +44,15 @@ body, * {
 #profile img {
     border-radius: 999px;
     width: 250px;
-    border: 5px solid rgb(80, 148, 114);
+    border: 5px solid var(--main-color);
     box-shadow: 0 0 1em 0 #639491;
 }
 
 #profile p {
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 0.5px;
     line-height: 24px;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 #profile span a {
@@ -58,62 +63,20 @@ body, * {
 }
 
 #profile span a:hover {
-    text-shadow: 1px 1px 0.3em #b5d3c6;
+    text-shadow: 1px 1px 0.3em var(--minor-color);
     transition: 0.4s;
-    color: #a876d7;
+    color: var(--minor-color);
     outline: none;
 }
 
 #profile span a:focus {
-    text-shadow: 1px 1px 0.3em #b5d3c6;
+    text-shadow: 1px 1px 0.3em var(--main-hover-color);
     transition: 0.2s;
-    color: #a876d7;
+    color: var(--minor-color);
     outline: none;
-}
-
-#links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#links ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 23px;
-    padding: 0px 36 36px;
-    list-style: none;
-}
-
-#links a {
-    display: inline-block;
-    padding: 15px;
-    background-color: #8fdca7;
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 1s;
-    width: 250px;
-}
-
-#links a:hover {
-    transition: 0.3s;
-    background-color: #a0f2ba;
-    box-shadow: 0 0 0.9em 0 #a0f2ba;
-    transition: 0.2s;
-}
-
-#links a:focus {
-    outline: none;
-    box-shadow: 0 0 0.9em 0 #a0f2ba;
-    transition: 0.1s;
 }
 
 #social {
-
     text-align: center;
 }
 
@@ -138,6 +101,7 @@ body, * {
     padding: 5px;
     transition: 0.3s;
     border-radius: 2px;
+    transition: 0.8s;
 }
 
 #social img:hover {
@@ -145,18 +109,51 @@ body, * {
     padding: 5px;
     border-radius: 10px;
     cursor: url('../assets/main-cursor.svg');
-}
-footer {
-    display: flex;
+    transition: 0.8s;
 }
 
-footer span {
-    background-color: rgba(255, 255, 255, 0.039);
-    border-radius: 99px;
-    padding: 5px 15px;
-    font-size: 0.65em;
-    color: rgb(219, 187, 239);
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#links ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding: 0px 36 36px;
+    list-style: none;
+}
+
+#links a {
+    display: inline-block;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 1s;
+    width: 250px;
+}
+
+#links a:hover {
+    transition: 0.3s;
+    background-color: var(--main-color);
+    box-shadow: 0 0 0.9em 0 var(--main-hover-color);
+    transition: 0.2s;
+}
+
+#links a:focus {
+    outline: none;
+    box-shadow: 0 0 0.9em 0 var(--main-hover-color);
+    transition: 0.1s;
+}
+
+
 
 #pixContent {
     display: flex;
@@ -167,20 +164,19 @@ footer span {
     padding: 15px;
     border-radius: 10px;
     width: 250px;
-    outline: 1px solid #8fdca7;
+    outline: 1px solid var(--main-color);
 }
 
 #pixContent img {
     width: 13px;
 }
 
-
 #pixContent span {
     display: flex;
     gap: 6px;
     align-items: center;
     margin-right: 5px;
-    color: #8fdca7;
+    color: var(--main-color);
 }
 
 #pixContent span img {
@@ -190,9 +186,27 @@ footer span {
 
 #pixContent:hover{
     transition: 0.3s;
-    box-shadow: 0 0 0.5em 0 #8fdca7;
+    box-shadow: 0 0 0.5em 0 var(--main-color);
     transition: 0.2s;
     cursor: url('../assets/main-cursor.svg');
+}
+
+footer {
+    display: flex;
+}
+
+footer span {
+    background-color: rgba(255, 255, 255, 0.039);
+    border-radius: 99px;
+    padding: 5px 15px;
+    font-size: 0.65em;
+    color: rgba(255, 255, 255, 0.357);
+    transition: 0.5s;
+}
+
+footer span:hover {
+    color: rgba(255, 255, 255, 0.761);
+    transition: 0.5s;
 }
 
 
@@ -222,31 +236,13 @@ footer span {
     -ms-animation: fadeIn 1s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 700px) {
     body, * {
         transition: 1s;
     }
 
     body {
-        background: url(assets/bg-image.svg) no-repeat top center/cover;
+        background: url(../assets/bg-image.svg) no-repeat top center/cover;
         min-height: 100vh;
         display: flex;
         align-items: center;

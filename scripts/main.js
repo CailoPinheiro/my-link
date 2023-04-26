@@ -1,24 +1,3 @@
-// const pixContent = document.getElementById("pixContent");
-// const pix = "bce23200-89bc-42e8-b15c-62914cfdaa9c";
-
-// swap();
-// function copiar() {
-//   navigator.clipboard.writeText(pix);
-//   swap();
-// }
-
-// function swap() {
-//   if (navigator.readText(pix)) {
-//     const copied = "<spanid='pix'>Copiado!</span>";
-//     pixContent.innerHTML = copied;
-//     console.log("mds")
-//   } else {
-//     setTimeout(() => {
-//         pixContent.innerHTML = "";
-//     }, 500);
-//   }
-// }
-
 const pixContent = document.getElementById("pixContent");
 const pix = "bce23200-89bc-42e8-b15c-62914cfdaa9c";
 
