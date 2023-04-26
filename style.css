@@ -158,7 +158,7 @@ footer span {
     color: rgb(219, 187, 239);
 }
 
-#pix-test {
+#pixContent {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -171,17 +171,26 @@ footer span {
     outline: 1px solid #8fdca7;
 }
 
-#pix-test img {
+#pixContent img {
     width: 13px;
 }
 
-#pix-test span {
-    color: #8fdca7;
+
+#pixContent span {
+    display: flex;
+    gap: 6px;
+    align-items: center;
     margin-right: 5px;
+    color: #8fdca7;
+}
+
+#pixContent span img {
+    margin-top: 2px;
+    width: 15px;
 }
 
 
-#pix-test:hover:hover {
+#pixContent:hover{
     transition: 0.3s;
     box-shadow: 0 0 0.5em 0 #8fdca7;
     transition: 0.2s;
