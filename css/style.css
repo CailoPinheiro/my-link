@@ -45,7 +45,17 @@ body, * {
     border-radius: 999px;
     width: 250px;
     border: 5px solid var(--main-color);
-    box-shadow: 0 0 1em 0 #639491;
+    box-shadow: 0 0 0.5em 0 #639491;
+    transform: rotate(-6deg);
+    transition: 2s ease-out;
+}
+
+#profile img:hover {
+    transition: 1s ease-in-out;
+    transform: rotate(6deg);
+    transform: scale(0.99);
+    box-shadow: 0 0 1000px 0 #639491;
+    box-shadow: 0 0 1000px 0 #172337;
 }
 
 #profile p {
@@ -55,6 +65,24 @@ body, * {
     margin-top: 15px;
 }
 
+#profile span img {
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+    width: 10px;
+    margin-right: 5px;
+}
+
+/* #profile span #arroba {
+    font-size: 1em;
+}
+*/
+
+#profile span .sub-text {
+    color: #a0f2ba47;
+    font-size: 1em;
+} 
+
 #profile span a {
     color: #b9f8cd;
     font-size: 0.8em;
@@ -63,7 +91,7 @@ body, * {
 }
 
 #profile span a:hover {
-    text-shadow: 1px 1px 0.3em var(--minor-color);
+    /* text-shadow: 1px 1px 0.3em var(--minor-color); */
     transition: 0.4s;
     color: var(--minor-color);
     outline: none;
@@ -75,6 +103,8 @@ body, * {
     color: var(--minor-color);
     outline: none;
 }
+
+
 
 #social {
     text-align: center;
@@ -136,15 +166,15 @@ body, * {
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.8s;
     width: 250px;
 }
 
 #links a:hover {
     transition: 0.3s;
     background-color: var(--main-color);
-    box-shadow: 0 0 0.9em 0 var(--main-hover-color);
-    transition: 0.2s;
+    box-shadow: 0 0 0.6em 0 var(--main-hover-color);
+    transition: 0.3s;
 }
 
 #links a:focus {
@@ -235,6 +265,21 @@ footer span:hover {
     -o-animation: fadeIn 1s;
     -ms-animation: fadeIn 1s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 700px) {
     body, * {
