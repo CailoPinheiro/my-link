@@ -29,7 +29,7 @@ function swap() {
 
 const profileImg = document.getElementById("profile-img");
 
-profileImg.addEventListener("touchstart", () => {
+profileImg.addEventListener("click", () => {
   profileImg.classList.add("active");
 });
 
