@@ -29,13 +29,14 @@ function swap() {
 
 const profileImg = document.getElementById("profile-img");
 
-profileImg.addEventListener("click", () => {
-  profileImg.classList.add("active");
+profileImg.addEventListener("touchstart", function() {
+  this.classList.add("active");
+
+  setTimeout(() => {
+    this.classList.remove("active");
+  }, 2000);
 });
 
-profileImg.addEventListener("touchcancel", () => {
-  profileImg.classList.remove("active");
-});
 
 
 
