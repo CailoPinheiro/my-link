@@ -2,5 +2,5 @@ cd /D D:\CAILO\Programação\1 - Plataformas - Cursos\Rocketseat\Devlinks\devlin
 git add .
 timeout /t 1
 git commit -m "random"
-timeout /t 1
+timeout /t 5
 git push
