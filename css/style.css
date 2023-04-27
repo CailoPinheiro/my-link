@@ -298,6 +298,7 @@ body {
     #profile img {
         width: 200px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
+        transition: 1s ease-in-out;
     }
 
     /* #profile img:hover {
