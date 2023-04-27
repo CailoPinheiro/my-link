@@ -4,11 +4,10 @@
         {
             "label": "Fast Changes",
             "type": "shell",
-            "command": "cmd",
-            "args": [
-                "/c",
-                "git add . && git commit -m 'random' && git push"
-            ]
+            "command": "${workspaceFolder}/fastchanges.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/D:/CAILO/Programação/1 - Plataformas - Cursos/Rocketseat/Devlinks/devlinks"
+            }
         }
     ]
 }
