@@ -24,3 +24,16 @@ function swap() {
     // }, 10000);
   }
 }
+
+// touch start e touch end na imagem
+
+const profileImg = document.getElementById('profile-img');
+
+profileImg.addEventListener('touchstart', () => {
+  profileImg.classList.add('active');
+});
+
+profileImg.addEventListener('touchend', () => {
+  profileImg.classList.remove('active');
+});
+
