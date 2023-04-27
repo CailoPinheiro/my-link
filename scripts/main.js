@@ -31,12 +31,10 @@ const profileImg = document.getElementById("profile-img");
 
 profileImg.addEventListener("touchstart", () => {
   profileImg.classList.add("active");
+});
 
-  profileImg.addEventListener("touchend", () => {
-    profileImg.classList.remove("active");
-  
-  });
-  
+profileImg.addEventListener("touchcancel", () => {
+  profileImg.classList.remove("active");
 });
 
 
