@@ -33,8 +33,10 @@ profileImg.addEventListener("touchstart", () => {
   profileImg.classList.add("active");
 });
 
-setTimeout(() => {
-  profileImg.addEventListener("touchend", () => {
-    profileImg.classList.remove("active");
-  });
-}, 3000);
+profileImg.addEventListener("touchend", () => {
+  profileImg.classList.remove("active");
+});
+
+// setTimeout(() => {
+  
+// }, 3000);
