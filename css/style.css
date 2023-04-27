@@ -314,12 +314,13 @@ body {
         transform: scale(0.99);
         box-shadow: 0 0 66em 0 #1d2c2b;
     }
-    
+
     #profile img.active {
         transition: 0.5s ease-in-out;
         transform: rotate(6deg);
         transform: scale(0.99);
         box-shadow: 0 0 66em 0 #1d2c2b;
+        transition-delay: 2s;
     }
 
     footer {

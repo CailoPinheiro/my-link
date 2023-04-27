@@ -29,7 +29,7 @@ function swap() {
 
 const profileImg = document.getElementById("profile-img");
 
-profileImg.addEventListener("touchend", function() {
+profileImg.addEventListener("touch", function() {
   this.classList.add("active");
 
   setTimeout(() => {
