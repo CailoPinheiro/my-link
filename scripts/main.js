@@ -31,7 +31,9 @@ const profileImg = document.getElementById("profile-img");
 
 profileImg.addEventListener("touchstart", function() {
   this.classList.add("active");
+});
 
+profileImg.addEventListener("touchend", function() {
   setTimeout(() => {
     this.classList.remove("active");
   }, 2000);
