@@ -27,22 +27,15 @@ function swap() {
 
 // touch start e touch end na imagem
 
-const profileImg = document.querySelector('#profile img');
-
-let timeoutId;
-
-profileImg.addEventListener('mousedown', function() {
-  this.classList.add('active');
-  
-  timeoutId = setTimeout(() => {
-    this.classList.remove('active');
-  }, 2000);
+$(document).ready(function() {
+  $("#profile-img").on("tap", function() {
+    $(this).addClass("active");
+    setTimeout(() => {
+      $(this).removeClass("active");
+    }, 2000);
+  });
 });
 
-profileImg.addEventListener('mouseup', function() {
-  clearTimeout(timeoutId);
-  this.classList.remove('active');
-});
 
 
 
