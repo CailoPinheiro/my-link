@@ -27,15 +27,23 @@ function swap() {
 
 // touch start e touch end na imagem
 
-const profileImg = document.getElementById("profile-img");
+const profileImg = document.querySelector('#profile img');
 
-profileImg.addEventListener("touch", function() {
-  this.classList.add("active");
+let timeoutId;
 
-  setTimeout(() => {
-    this.classList.remove("active");
+profileImg.addEventListener('mousedown', function() {
+  this.classList.add('active');
+  
+  timeoutId = setTimeout(() => {
+    this.classList.remove('active');
   }, 2000);
 });
+
+profileImg.addEventListener('mouseup', function() {
+  clearTimeout(timeoutId);
+  this.classList.remove('active');
+});
+
 
 
 
