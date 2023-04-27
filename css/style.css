@@ -299,14 +299,14 @@ footer span:hover {
     }
 
     #profile img:hover {
-        transition: 0.5s ease-in-out;
-        transform: rotate(-10deg);
-        transform: scale(1.04);
-        box-shadow: 0 0 66em 0 #639491;
+        transition: none;
+        transform: none;
+        transform: none;
+        box-shadow: none;
     }
 
     #profile img:active {
-        transition: 0.5s ease-in-out;
+        transition: 1s ease-in-out;
         transform: rotate(6deg);
         transform: scale(0.99);
         box-shadow: 0 0 1000px 0 #639491;
