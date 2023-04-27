@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Fast Changes",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "git add . && git commit -m 'random' && git push"
+            ]
+        }
+    ]
+}

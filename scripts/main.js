@@ -27,13 +27,14 @@ function swap() {
 
 // touch start e touch end na imagem
 
-const profileImg = document.getElementById('profile-img');
+const profileImg = document.getElementById("profile-img");
 
-profileImg.addEventListener('touchstart', () => {
-  profileImg.classList.add('active');
+profileImg.addEventListener("touchstart", () => {
+  profileImg.classList.add("active");
 });
 
-profileImg.addEventListener('touchend', () => {
-  profileImg.classList.remove('active');
-});
-
+setTimeout(() => {
+  profileImg.addEventListener("touchend", () => {
+    profileImg.classList.remove("active");
+  });
+}, 3000);
