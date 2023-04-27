@@ -299,11 +299,11 @@ footer span:hover {
     }
 
     #profile img:hover {
-        /* transition: 1s ease-in-out;
+        transition: 1s ease-in-out;
         transform: rotate(6deg);
         transform: scale(0.99);
         box-shadow: 0 0 1000px 0 #639491;
-        box-shadow: 0 0 61em 0 #172337; */
+        box-shadow: 0 0 61em 0 #172337;
     }
 
     #profile img:active {
