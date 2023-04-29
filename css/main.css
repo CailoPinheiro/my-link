@@ -4,20 +4,13 @@
     font-family: 'Inter', sans-serif;
     color: white;
     box-sizing: border-box;
+    box-sizing: content-box;
 }
-
 
 :root {
     --main-color: #8fdca7;
     --main-hover-color: #a0f2ba;
     --minor-color: #dbbbef;
-}
-
-body {
-    background: url(../assets/bg-image.svg) no-repeat top center/cover;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
 body,
@@ -26,7 +19,32 @@ body,
     cursor: url('../assets/main-cursor.svg'), auto;
 }
 
+  
+
+body {
+    background: url(../assets/bg-image.svg) no-repeat top center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#toggleTheme svg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 30px;
+    height: 30px;
+}
+
+#toggleTheme svg path {
+    fill: rgb(236, 228, 139);
+}
+
 #container {
+   
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -36,6 +54,7 @@ body,
     padding: 30px;
     border-radius: 25px;
     height: fit-content;
+    position: relative;
 }
 
 #profile {
@@ -44,23 +63,25 @@ body,
 
 #profile img {
     border-radius: 999px;
-    width: 250px;
+    width: 200px;
     border: 5px solid var(--main-color);
-    box-shadow: 0 0 0.5em 0 #639491;
+    box-shadow: 0 0 1000px 0 #172337;
+    box-shadow: 0 0 5em 0 #172337;
     transform: rotate(-8deg);
-    transition: 2s ease-out;
+    transition: 0.5s ease;
 }
 
 #profile img:hover {
-    transition: 1s ease-in-out;
+    transition: 0.6s ease;
     transform: rotate(6deg);
-    transform: scale(0.99);
-    box-shadow: 0 0 1000px 0 #172337;
+    transform: scale(0.95);
+    box-shadow: 0 0 5em 0 #63949163;
+    box-shadow: 0 0 1000px 0 #63949163;
 }
 
 #profile p {
     font-weight: bold;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     line-height: 24px;
     margin-top: 15px;
 }
@@ -72,11 +93,6 @@ body,
     width: 10px;
     margin-right: 5px;
 }
-
-/* #profile span #arroba {
-    font-size: 1em;
-}
-*/
 
 #profile span .sub-text {
     color: #a0f2ba47;
@@ -106,42 +122,6 @@ body,
 
 
 
-#social {
-    text-align: center;
-}
-
-#social ul {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    list-style: none;
-}
-
-#social li {
-    align-items: center;
-    display: flex;
-    align-items: center;
-}
-
-#social a {
-    display: flex;
-}
-
-#social img {
-    padding: 5px;
-    transition: 0.3s;
-    border-radius: 2px;
-    transition: 0.8s;
-}
-
-#social img:hover {
-    background-color: rgba(240, 255, 255, 0.079);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: url('../assets/main-cursor.svg');
-    transition: 0.8s;
-}
-
 #links {
     display: flex;
     flex-direction: column;
@@ -166,15 +146,14 @@ body,
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    transition: 0.8s;
+    transition: 0.5s ease-in-out;
     width: 250px;
 }
 
 #links a:hover {
-    transition: 0.3s;
     background-color: var(--main-color);
     box-shadow: 0 0 0.6em 0 var(--main-hover-color);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #links a:focus {
@@ -220,6 +199,47 @@ body,
     transition: 0.2s;
     cursor: url('../assets/main-cursor.svg');
 }
+#social {
+    text-align: center;
+}
+
+#social ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+}
+
+#social li {
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+#social a {
+    display: flex;
+}
+
+#social img {
+    padding: 5px;
+    transition: 0.3s;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+#social img:hover {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: url('../assets/main-cursor.svg');
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+/* #social a:focus {
+    outline: 1px solid var(--main-color); 
+    transition: 0.3s ease-out;
+    border-radius: 10px;
+} */
 
 footer {
     display: flex;
@@ -257,29 +277,13 @@ footer span:hover {
     }
 }
 
-.fade-in,
-body {
+.fade-in {
     animation: fadeIn 1s;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     -o-animation: fadeIn 1s;
     -ms-animation: fadeIn 1s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 700px) {
 
@@ -298,7 +302,7 @@ body {
     #profile img {
         width: 200px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
-        transition: 1s ease-in-out;
+        transition: 0.5s ease-in-out;
     }
 
     /* #profile img:hover {
@@ -317,5 +321,10 @@ body {
 
     footer {
         margin-bottom: 50px;
+    }
+    
+    #toggleTheme {
+        position: absolute;
+        right: 100px;
     }
 }
