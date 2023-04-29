@@ -17,14 +17,14 @@
 
 body,
 * {
-    transition: 0.5s;
+    transition: 1s;
     cursor: url('../assets/main-cursor.svg'), auto;
 }
 
   
 
 body {
-    background: url(../assets/bg-image.svg) no-repeat top center/cover;
+    background: #001421 url(../assets/bg-image.svg) no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
 
 #toggleTheme svg{
     position: absolute;
-    top: 0;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 30px;
@@ -57,6 +57,7 @@ body {
     border-radius: 25px;
     height: fit-content;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.023);
 }
 
 #profile {
@@ -66,7 +67,7 @@ body {
 #profile img {
     border-radius: 999px;
     width: 200px;
-    border: 5px solid var(--main-color);
+    outline: 5px solid var(--main-color);
     box-shadow: 0 0 1000px 0 #172337;
     box-shadow: 0 0 5em 0 #172337;
     transform: rotate(-8deg);
@@ -83,6 +84,16 @@ body {
 
 #profile p {
     font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+#profile p {
+    /* color: var(--main-color-light); */
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 0 2px 0.3em  #2121213e;
     letter-spacing: 1.5px;
     line-height: 24px;
     margin-top: 15px;
@@ -342,4 +353,5 @@ footer span:hover {
         width: 50px;
         height: 50px;
     }
+    
 }

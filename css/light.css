@@ -9,23 +9,25 @@
 
 :root {
     --main-color: #8fdca7;
-    --main-color-light: #020A13;
+    --main-color-light: #001421;
     --main-hover-color: #a0f2ba;
     --main-hover-color-light: #012820;
     --social-color: var(--main-color-light);
     --pix-check-color: var(--main-color-light);
     --minor-color: #dbbbef;
-    
 }
 
 body,
 * {
-    transition: 0.5s;
+    transition: 1s;
     cursor: url('../assets/main-cursor.svg'), auto;
 }
 
 body {
-    background-color: var(--main-color);
+   
+    
+    background-color: #001421;
+    background-image: url(../assets/mds2.svg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -57,8 +59,9 @@ body {
     border-radius: 25px;
     height: fit-content;
     background-color: #00000015;
+    background-color: #8FD19F;
     border-radius: 20px;
-    box-shadow: 0 1em 1em rgba(19, 19, 19, 0.254);
+    box-shadow: 1em 1em 3em rgba(19, 19, 19, 0.193);
 }
 
 #profile {
@@ -68,7 +71,7 @@ body {
 #profile img {
     border-radius: 999px;
     width: 200px;
-    border: 5px solid var(--main-color);
+    /* border: 5px solid#e9d2f2; */
     box-shadow: 0 0.5em 1em  #21212167;
     transform: rotate(-8deg);
     transition: 0.5s ease;
@@ -88,7 +91,7 @@ body {
     letter-spacing: 1.5px;
     line-height: 24px;
     margin-top: 15px;
-   
+
 }
 
 #profile span img {
@@ -149,7 +152,6 @@ body {
 #links a {
     display: inline-block;
     padding: 15px;
-    background-color: rgb(35, 36, 36);
     background-color: var(--main-color-light);
     color: var(--main-color);
     font-weight: bold;
@@ -160,9 +162,9 @@ body {
 }
 
 #links a:hover {
-    background-color: #020a13ef;
+    background-color: #001421f3;
     transform: scale(1.011);
-    box-shadow: 0 1px 4px 0 var(--main-hover-color-light);
+    box-shadow: 0 1px 4px 0 #001421f3;
     transition: 0.2s;
 }
 
@@ -313,6 +315,10 @@ footer span:hover {
         align-items: center;
     }
 
+    #container {
+        background-color: #8FD19F;
+    }
+    
     #profile img {
         width: 200px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
