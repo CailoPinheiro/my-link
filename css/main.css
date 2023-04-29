@@ -11,6 +11,8 @@
     --main-color: #8fdca7;
     --main-hover-color: #a0f2ba;
     --minor-color: #dbbbef;
+    --social-color: white;
+    --pix-check-color: #8fdca7;
 }
 
 body,
@@ -97,6 +99,7 @@ body {
 #profile span .sub-text {
     color: #a0f2ba47;
     font-size: 1em;
+    opacity: 0.8;
 }
 
 #profile span a {
@@ -109,15 +112,15 @@ body {
 #profile span a:hover {
     /* text-shadow: 1px 1px 0.3em var(--minor-color); */
     transition: 0.4s;
-    color: var(--minor-color);
     outline: none;
+    opacity: 0.8;
 }
 
 #profile span a:focus {
     text-shadow: 1px 1px 0.3em var(--main-hover-color);
     transition: 0.2s;
-    color: var(--minor-color);
     outline: none;
+    opacity: 0.8;
 }
 
 
@@ -176,7 +179,7 @@ body {
     outline: 1px solid var(--main-color);
 }
 
-#pixContent img {
+#pixContent svg {
     width: 13px;
 }
 
@@ -188,7 +191,7 @@ body {
     color: var(--main-color);
 }
 
-#pixContent span img {
+#pixContent span svg {
     margin-top: 2px;
     width: 15px;
 }
@@ -220,6 +223,16 @@ body {
     display: flex;
 }
 
+#social svg {
+    width: 24px;
+}
+
+#social svg:hover {
+    cursor: url('../assets/main-cursor.svg');
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
 #social img {
     padding: 5px;
     transition: 0.3s;
@@ -228,8 +241,6 @@ body {
 }
 
 #social img:hover {
-    padding: 5px;
-    border-radius: 10px;
     cursor: url('../assets/main-cursor.svg');
     transition: 0.5s;
     opacity: 0.5;
@@ -323,8 +334,12 @@ footer span:hover {
         margin-bottom: 50px;
     }
     
-    #toggleTheme {
+    #toggleTheme svg{
         position: absolute;
-        right: 100px;
+        top: 6%;
+        left: 76%;
+        transform: translate(-50%, 0);
+        width: 50px;
+        height: 50px;
     }
 }

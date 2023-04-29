@@ -12,6 +12,8 @@
     --main-color-light: #020A13;
     --main-hover-color: #a0f2ba;
     --main-hover-color-light: #012820;
+    --social-color: var(--main-color-light);
+    --pix-check-color: var(--main-color-light);
     --minor-color: #dbbbef;
     
 }
@@ -183,7 +185,7 @@ body {
     outline: 1.7px solid var(--main-color-light);
 }
 
-#pixContent img {
+#pixContent svg {
     width: 13px;
 }
 
@@ -196,7 +198,7 @@ body {
     font-weight: bold;
 }
 
-#pixContent span img {
+#pixContent span svg {
     margin-top: 2px;
     width: 15px;
 }
@@ -210,28 +212,33 @@ body {
 
 #social {
     text-align: center;
-    
 }
 
 #social ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    list-style: none;
-    
+    list-style: none; 
 }
 
 #social li {
     align-items: center;
     display: flex;
     align-items: center;
-    background-color: var(--main-color-light);
-    border-radius: 10px;
-    padding: 4px;
 }
 
 #social a {
     display: flex;
+}
+
+#social svg {
+    width: 24px;
+}
+
+#social svg:hover {
+    cursor: url('../assets/main-cursor.svg');
+    transition: 0.5s;
+    opacity: 0.5;
 }
 
 #social img {
@@ -249,27 +256,21 @@ body {
     opacity: 0.5;
 }
 
-/* #social a:focus {
-    outline: 1px solid var(--main-color); 
-    transition: 0.3s ease-out;
-    border-radius: 10px;
-} */
-
 footer {
     display: flex;
 }
 
 footer span {
-    background-color: rgba(255, 255, 255, 0.039);
+    background-color: rgba(0, 0, 0, 0.149);
     border-radius: 99px;
     padding: 5px 15px;
     font-size: 0.65em;
-    color: rgba(255, 255, 255, 0.357);
+    color: rgba(255, 255, 255, 0.638);
     transition: 0.5s;
 }
 
 footer span:hover {
-    color: rgba(255, 255, 255, 0.761);
+    color: rgba(255, 255, 255, 0.894);
     transition: 0.5s;
 }
 
@@ -299,7 +300,7 @@ footer span:hover {
     -ms-animation: fadeIn 1s;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 
     body,
     * {
@@ -316,6 +317,7 @@ footer span:hover {
         width: 200px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
         transition: 0.5s ease-in-out;
+        position: relative;
     }
 
     /* #profile img:hover {
@@ -336,8 +338,12 @@ footer span:hover {
         margin-bottom: 50px;
     }
     
-    #toggleTheme {
+    #toggleTheme svg{
         position: absolute;
-        right: 100px;
+        top: 6%;
+        left: 76%;
+        transform: translate(-50%, 0);
+        width: 50px;
+        height: 50px;
     }
 }
