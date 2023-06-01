@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #toggleTheme svg{
@@ -311,11 +310,10 @@ footer span:hover {
     }
 
     body {
-        background: url(../assets/bg-image.svg) no-repeat top center/cover;
+        background: url(../assets/bg-image.svg) repeat-y center/cover;
         min-height: 100vh;
-        display: flex;
-        align-items: center;
     }
+
 
     #profile img {
         width: 200px;
