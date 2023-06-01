@@ -27,14 +27,14 @@ function swap() {
 
 // touch start e touch end na imagem
 
-$(document).ready(function() {
-  $("#profile-img").on("tap", function() {
-    $(this).addClass("active");
-    setTimeout(() => {
-      $(this).removeClass("active");
-    }, 2000);
-  });
-});
+// $(document).ready(function() {
+//   $("#profile-img").on("tap", function() {
+//     $(this).addClass("active");
+//     setTimeout(() => {
+//       $(this).removeClass("active");
+//     }, 2000);
+//   });
+// });
 
 
 
