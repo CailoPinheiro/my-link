@@ -263,11 +263,11 @@ footer {
 }
 
 footer span {
-    background-color: rgba(0, 0, 0, 0.149);
+    background-color: rgba(0, 0, 0, 0.027);
     border-radius: 99px;
     padding: 5px 15px;
     font-size: 0.65em;
-    color: rgba(255, 255, 255, 0.638);
+    color: var(--main-color-light);
     transition: 0.5s;
 }
 
@@ -326,18 +326,22 @@ footer span:hover {
         position: relative;
     }
 
-    /* #profile img:hover {
-        transition: 1s ease-in-out;
-        transform: rotate(6deg);
-        transform: scale(0.99);
-        box-shadow: 0 0 66em 0 #496f6d;
-    } */
-
     #profile img:active {
         transition: 0.5s ease-in-out;
         transform: rotate(6deg);
         transform: scale(0.99);
         box-shadow: 0 0 66em 0 #1d2c2b;
+    }
+
+    #social ul {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+     
+    }
+
+    #social svg {
+        width: 30px;
     }
 
     footer {

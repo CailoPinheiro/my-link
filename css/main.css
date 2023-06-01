@@ -21,8 +21,6 @@ body,
     cursor: url('../assets/main-cursor.svg'), auto;
 }
 
-  
-
 body {
     background: #001421 url(../assets/bg-image.svg) no-repeat;
     min-height: 100vh;
@@ -79,7 +77,7 @@ body {
     transform: rotate(6deg);
     transform: scale(0.95);
     box-shadow: 0 0 5em 0 #63949163;
-    box-shadow: 0 0 1000px 0 #63949163;
+    box-shadow: 0 0 100px 0 #63949163;
 }
 
 #profile p {
@@ -175,8 +173,6 @@ body {
     box-shadow: 0 0 0.9em 0 var(--main-hover-color);
     transition: 0.1s;
 }
-
-
 
 #pixContent {
     display: flex;
@@ -341,11 +337,23 @@ footer span:hover {
         box-shadow: 0 0 66em 0 #1d2c2b;
     }
 
+    #social ul {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+     
+    }
+
+    #social svg {
+        width: 30px;
+    }
+    
     footer {
         margin-bottom: 50px;
     }
     
     #toggleTheme svg{
+        display: none;
         position: absolute;
         top: 6%;
         left: 76%;
