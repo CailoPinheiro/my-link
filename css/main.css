@@ -392,6 +392,10 @@ footer span:hover {
         transform: scale(0.9);
     }
 
+    #social {
+        margin-top: 50px;
+    }
+
     #social ul {
         display: flex;
         flex-direction: row;
