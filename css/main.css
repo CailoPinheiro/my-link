@@ -348,12 +348,12 @@ footer span:hover {
         box-shadow: 0 0 66em 0 #496f6d;
     } */
 
-    #profile img:active {
+    /* #profile img:active {
         transition: 0.5s ease-in-out;
         transform: rotate(6deg);
         transform: scale(0.99);
         box-shadow: 0 0 66em 0 #1d2c2b;
-    }
+    } */
 
     #social ul {
         display: flex;
@@ -387,9 +387,7 @@ footer span:hover {
         padding: 0px;
         background-color: rgba(255, 255, 255, 0.023);
         border-radius: 10px;
-        padding: 20px 14px;
-        
-        
+        padding: 20px 14px; 
     }
     
     .aboutMe h2 {
