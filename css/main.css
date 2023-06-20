@@ -335,7 +335,7 @@ footer span:hover {
 
 
     #profile img {
-        width: 210px;
+        width: 150px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
         transition: 0.5s ease-in-out;
         transform: scale(0.9);
@@ -359,12 +359,10 @@ footer span:hover {
         display: flex;
         flex-direction: row;
         gap: 15px;
-     
     }
 
     #social svg {
         width: 30px;
-        /* transform: scale(0.9); */
     }
     
     footer {
@@ -403,7 +401,6 @@ footer span:hover {
         text-align: justify;
         padding: 0px 20px;
         transform: scale(0.9);
-        
     }
 
     #container {
