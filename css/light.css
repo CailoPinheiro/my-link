@@ -64,6 +64,8 @@ body {
     box-shadow: 1em 1em 3em rgba(19, 19, 19, 0.193);
 }
 
+
+
 #profile {
     text-align: center;
 }
@@ -131,6 +133,29 @@ body {
     transition: 0.2s;
     color: var(--minor-color);
     outline: none;
+}
+
+.aboutMe {
+    max-width: 255px;
+    /* border: 1px solid rgba(255, 255, 255, 0.079); */
+    padding: 10px;
+    /* background: #001421; */
+    border: #001421 1px solid;
+    
+    border-radius: 10px;
+    padding: 20px 14px;
+}
+
+.aboutMe h2 {
+    font-size: 1em;
+    margin-bottom:10px;
+    color: var(--main-color-light);
+}
+
+.aboutMe p {
+    color: var(--main-color-light);
+    font-size: 0.9em;
+    text-align: center;
 }
 
 #links {
@@ -315,22 +340,71 @@ footer span:hover {
         align-items: center;
     }
 
-    #container {
-        background-color: #8FD19F;
-    }
-    
-    #profile img {
-        width: 200px;
-        box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
-        transition: 0.5s ease-in-out;
-        position: relative;
+    body {
+        /* background:rgb(5, 9, 8); */
+        min-height: 100vh;
     }
 
-    #profile img:active {
+    #container {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap:20px;
+        width: 300px;
+        min-height: fit-content;
+        /* border: 1px solid red; */
+        padding: 30px;
+        border-radius: 25px;
+        height: fit-content;
+        position: relative;
+        background-color: #8FD19F;
+    }
+
+    
+
+    #profile img {
+        width: 150px;
+        box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
+        transition: 0.5s ease-in-out;
+        transform: scale(0.9);
+    }
+
+    #profile img:hover {
+        transition: 0.5s;
+        transform: rotate(6deg);
+        transform: scale(0.92);
+        box-shadow: 0 0 2em 0 #496f6d;
+    }
+
+    /* #profile img:active {
         transition: 0.5s ease-in-out;
         transform: rotate(6deg);
         transform: scale(0.99);
         box-shadow: 0 0 66em 0 #1d2c2b;
+    } */
+
+    .aboutMe {
+        max-width: 255px;
+        /* border: 1px solid rgba(255, 255, 255, 0.079); */
+        padding: 0px;
+        background-color: rgba(255, 255, 255, 0.023);
+        border-radius: 10px;
+        padding: 20px 14px; 
+    }
+    
+    .aboutMe h2 {
+        font-size: 0.9em;
+        margin-bottom:10px;
+        color: var(--minor-color);
+        transform: scale(0.9);
+    }
+    
+    .aboutMe p {
+        color: #b8b8b8;
+        font-size: 0.8em;
+        text-align: justify;
+        padding: 0px 20px;
+        transform: scale(0.9);
     }
 
     #social ul {

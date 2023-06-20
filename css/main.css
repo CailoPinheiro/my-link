@@ -333,6 +333,20 @@ footer span:hover {
         min-height: 100vh;
     }
 
+    #container {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap:20px;
+        width: 300px;
+        min-height: fit-content;
+        /* border: 1px solid red; */
+        padding: 30px;
+        border-radius: 25px;
+        height: fit-content;
+        position: relative;
+        background: none;
+    }
 
     #profile img {
         width: 150px;
@@ -355,30 +369,6 @@ footer span:hover {
         box-shadow: 0 0 66em 0 #1d2c2b;
     } */
 
-    #social ul {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    #social svg {
-        width: 30px;
-    }
-    
-    footer {
-        margin-bottom: 25px;
-    }
-    
-    #toggleTheme svg{
-        display: none;
-        position: absolute;
-        top: 6%;
-        left: 76%;
-        transform: translate(-50%, 0);
-        width: 50px;
-        height: 50px;
-    }
-    
     .aboutMe {
         max-width: 255px;
         /* border: 1px solid rgba(255, 255, 255, 0.079); */
@@ -403,19 +393,27 @@ footer span:hover {
         transform: scale(0.9);
     }
 
-    #container {
+    #social ul {
         display: flex;
-        flex-direction: column;
-        place-items: center;
-        gap:20px;
-        width: 300px;
-        min-height: fit-content;
-        /* border: 1px solid red; */
-        padding: 30px;
-        border-radius: 25px;
-        height: fit-content;
-        position: relative;
-        background: none;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #social svg {
+        width: 30px;
     }
     
+    footer {
+        margin-bottom: 25px;
+    }
+    
+    #toggleTheme svg{
+        /* display: none; */
+        position: absolute;
+        top: 6%;
+        left: 76%;
+        transform: translate(-50%, 0);
+        width: 50px;
+        height: 50px;
+    }
 }
