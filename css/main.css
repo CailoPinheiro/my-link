@@ -407,7 +407,8 @@ footer span:hover {
         place-items: center;
         gap: 30px;
         width: 350px;
-        margin: auto;
+        border: 1px solid red;
+        place-content: center;
         padding: 30px;
         border-radius: 25px;
         height: fit-content;
