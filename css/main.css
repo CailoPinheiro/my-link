@@ -379,10 +379,26 @@ footer span:hover {
         height: 50px;
     }
     
-    #container {
-        width: 100vw;
-        max-width: 350px;
-        height: 100vh;
-        max-height: 80vh;
+    .aboutMe {
+        max-width: 255px;
+        /* border: 1px solid rgba(255, 255, 255, 0.079); */
+        padding: 0px;
+        background: rgba(4, 8, 18, 0.766);
+        border-radius: 10px;
+        padding: 20px 14px;
     }
+    
+    .aboutMe h2 {
+        font-size: 0.9em;
+        margin-bottom:10px;
+        color: var(--minor-color);
+    }
+    
+    .aboutMe p {
+        color: #b8b8b8;
+        font-size: 0.8em;
+        text-align: justify;
+        padding: 0px 20px;
+    }
+    
 }
