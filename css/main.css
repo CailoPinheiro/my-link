@@ -416,7 +416,7 @@ footer span:hover {
         gap:20px;
         width: 300px;
         min-height: fit-content;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         padding: 30px;
         border-radius: 25px;
         height: fit-content;
