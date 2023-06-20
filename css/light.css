@@ -58,13 +58,10 @@ body {
     padding: 30px;
     border-radius: 25px;
     height: fit-content;
-    background-color: #00000015;
     background-color: #8FD19F;
     border-radius: 20px;
     box-shadow: 1em 1em 3em rgba(19, 19, 19, 0.193);
 }
-
-
 
 #profile {
     text-align: center;
@@ -335,12 +332,6 @@ footer span:hover {
     }
 
     body {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-
-    body {
         /* background:rgb(5, 9, 8); */
         min-height: 100vh;
     }
@@ -359,8 +350,6 @@ footer span:hover {
         position: relative;
         background-color: #8FD19F;
     }
-
-    
 
     #profile img {
         width: 150px;
@@ -395,13 +384,14 @@ footer span:hover {
     .aboutMe h2 {
         font-size: 0.9em;
         margin-bottom:10px;
-        color: var(--minor-color);
+        color: var(--main-color-light);
         transform: scale(0.9);
     }
     
     .aboutMe p {
-        color: #b8b8b8;
+        color: var(--main-color-light);
         font-size: 0.8em;
+        font-weight: 500;
         text-align: justify;
         padding: 0px 20px;
         transform: scale(0.9);
@@ -419,7 +409,7 @@ footer span:hover {
     }
 
     footer {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     
     #toggleTheme svg{
