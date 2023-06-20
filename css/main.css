@@ -43,7 +43,6 @@ body {
 }
 
 #container {
-   
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -131,7 +130,26 @@ body {
     opacity: 0.8;
 }
 
+.aboutMe {
+    max-width: 255px;
+    /* border: 1px solid rgba(255, 255, 255, 0.079); */
+    padding: 10px;
+    background: rgba(4, 8, 18, 0.766);
+    border-radius: 10px;
+    padding: 20px 14px;
+}
 
+.aboutMe h2 {
+    font-size: 1em;
+    margin-bottom:10px;
+    color: var(--minor-color);
+}
+
+.aboutMe p {
+    color: #b8b8b8;
+    font-size: 0.9em;
+    text-align: center;
+}
 
 #links {
     display: flex;
@@ -347,7 +365,7 @@ footer span:hover {
     }
     
     footer {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     
     #toggleTheme svg{
