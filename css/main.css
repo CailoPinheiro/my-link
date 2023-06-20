@@ -22,7 +22,7 @@ body,
 }
 
 body {
-    background: #001421 url(../assets/bg-image.svg) no-repeat;
+    background:url(../assets/bg-image.svg) center center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -379,4 +379,10 @@ footer span:hover {
         height: 50px;
     }
     
+    #container {
+        width: 100vw;
+        max-width: 350px;
+        height: 100vh;
+        max-height: 80vh;
+    }
 }
