@@ -45,8 +45,8 @@ body {
     top: 2%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 #toggleTheme svg path {
@@ -143,8 +143,7 @@ body {
     /* border: 1px solid rgba(255, 255, 255, 0.079); */
     padding: 10px;
     /* background: #001421; */
-    border: #001421 1px solid;
-    
+    outline: #001421 1px solid;
     border-radius: 10px;
     padding: 20px 14px;
 }
@@ -181,7 +180,7 @@ body {
     display: inline-block;
     padding: 15px;
     background-color: var(--main-color-light);
-    color: var(--minor-color);
+    color: var(--main-color);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
