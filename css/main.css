@@ -328,8 +328,8 @@ footer span:hover {
     }
 
     body {
-        /* background: url(../assets/bg-image.svg) repeat-y center/cover; */
-        background:rgb(5, 9, 8);
+        background: url(../assets/bg-image.svg) repeat-y center/cover;
+        /* background:rgb(5, 9, 8); */
         min-height: 100vh;
     }
 
