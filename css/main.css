@@ -400,5 +400,19 @@ footer span:hover {
         text-align: justify;
         padding: 0px 20px;
     }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        gap: 30px;
+        width: 360px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 25px;
+        height: fit-content;
+        position: relative;
+        background: none;
+    }
     
 }
