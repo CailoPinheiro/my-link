@@ -51,7 +51,6 @@ body {
     /* margin: auto; */
     padding: 30px;
     border-radius: 25px;
-    height: fit-content;
     position: relative;
     background-color: rgba(255, 255, 255, 0.023);
     margin: auto;
@@ -336,7 +335,7 @@ footer span:hover {
 
 
     #profile img {
-        width: 200px;
+        width: 210px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
         transition: 0.5s ease-in-out;
         transform: scale(0.9);
@@ -365,7 +364,7 @@ footer span:hover {
 
     #social svg {
         width: 30px;
-        transform: scale(0.9);
+        /* transform: scale(0.9); */
     }
     
     footer {
@@ -386,7 +385,7 @@ footer span:hover {
         max-width: 255px;
         /* border: 1px solid rgba(255, 255, 255, 0.079); */
         padding: 0px;
-        background: rgba(4, 8, 18, 0.766);
+        background-color: rgba(255, 255, 255, 0.023);
         border-radius: 10px;
         padding: 20px 14px;
         
@@ -421,7 +420,7 @@ footer span:hover {
         border-radius: 25px;
         height: fit-content;
         position: relative;
-        /* background: none; */
+        background: none;
     }
     
 }
