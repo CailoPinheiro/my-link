@@ -336,9 +336,10 @@ footer span:hover {
 
 
     #profile img {
-        width: 100px;
+        width: 200px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
         transition: 0.5s ease-in-out;
+        transform: scale(0.9);
     }
 
     /* #profile img:hover {
@@ -364,6 +365,7 @@ footer span:hover {
 
     #social svg {
         width: 30px;
+        transform: scale(0.9);
     }
     
     footer {
@@ -387,12 +389,15 @@ footer span:hover {
         background: rgba(4, 8, 18, 0.766);
         border-radius: 10px;
         padding: 20px 14px;
+        
+        
     }
     
     .aboutMe h2 {
         font-size: 0.9em;
         margin-bottom:10px;
         color: var(--minor-color);
+        transform: scale(0.9);
     }
     
     .aboutMe p {
@@ -400,6 +405,8 @@ footer span:hover {
         font-size: 0.8em;
         text-align: justify;
         padding: 0px 20px;
+        transform: scale(0.9);
+        
     }
 
     #container {
@@ -408,12 +415,13 @@ footer span:hover {
         place-items: center;
         gap:20px;
         width: 300px;
+        min-height: fit-content;
         border: 1px solid red;
         padding: 30px;
         border-radius: 25px;
         height: fit-content;
         position: relative;
-        background: none;
+        /* background: none; */
     }
     
 }
