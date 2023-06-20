@@ -23,11 +23,17 @@ body,
     cursor: url('../assets/main-cursor.svg'), auto;
 }
 
-body {
-   
-    
+/* body {
     background-color: #001421;
     background-image: url(../assets/mds2.svg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+body {
+    background:url(../assets/mds2.svg) center center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -175,7 +181,7 @@ body {
     display: inline-block;
     padding: 15px;
     background-color: var(--main-color-light);
-    color: var(--main-color);
+    color: var(--minor-color);
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
@@ -186,7 +192,7 @@ body {
 #links a:hover {
     background-color: #001421f3;
     transform: scale(1.011);
-    box-shadow: 0 1px 4px 0 #001421f3;
+    /* box-shadow: 0 1px 4px 0 #001421f3; */
     transition: 0.2s;
 }
 
@@ -229,7 +235,7 @@ body {
 
 #pixContent:hover {
     transform: scale(1.011);
-    box-shadow: 0 1px 4px 0 var(--main-hover-color-light);
+    /* box-shadow: 0 1px 4px 0 var(--main-hover-color-light); */
     transition: 0.2s;
     cursor: url('../assets/main-cursor.svg');
 }
@@ -413,6 +419,7 @@ footer span:hover {
     }
     
     #toggleTheme svg{
+        display: none;
         position: absolute;
         top: 6%;
         left: 76%;
