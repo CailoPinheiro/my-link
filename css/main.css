@@ -335,7 +335,7 @@ footer span:hover {
 
 
     #profile img {
-        width: 155px;
+        width: 100px;
         box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
         transition: 0.5s ease-in-out;
     }
