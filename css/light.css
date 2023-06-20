@@ -337,9 +337,17 @@ footer span:hover {
         transition: 1s;
     }
 
-    body {
-        /* background:rgb(5, 9, 8); */
+    /* body {
         min-height: 100vh;
+    } */
+
+    body {
+        background:url(../assets/mds2.svg) content-box;
+        background-size: contain;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #container {
