@@ -411,7 +411,7 @@ footer span:hover {
     }
     
     #toggleTheme svg{
-        display: none;
+        /* display: none; */
         position: absolute;
         top: 6%;
         left: 76%;
