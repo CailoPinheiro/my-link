@@ -1,0 +1,277 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Define variables for colors */
+:root {
+    --main-color: #8fdca7;
+    --main-hover-color: #a0f2ba;
+    --minor-color: #dbbbef;
+    --social-color: white;
+    --pix-check-color: #8fdca7;
+}
+
+/* Apply transitions to body and all elements */
+body, * {
+    transition: 0.5s;
+}
+
+/* Body styles */
+body {
+    background: url(../assets/bg-image.svg) no-repeat center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* Container styles */
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin: auto;
+    width: 360px;
+    padding: 1vh 1%;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Profile styles */
+#profile {
+    text-align: center;
+}
+
+#profile img {
+    border-radius: 100%;
+    width: 200px;
+    outline: 5px solid var(--main-color);
+    transition: 0.5s ease;
+    box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
+    transform: scale(0.9);
+    margin-top: 10px;
+}
+
+#profile p {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 0 2px 0.3em #2121213e;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+#profile .sub-text {
+    color: #ffffff4a;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* About Me styles */
+.aboutMe {
+    max-width: 255px;
+    border-radius: 10px;
+    padding: 20px 14px;
+    text-align: center;
+    background: rgba(4, 8, 18, 0.766);
+}
+
+.aboutMe h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--minor-color);
+}
+
+.aboutMe p {
+    color: #b8b8b8;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0px 20px;
+    transform: scale(0.9);
+}
+
+/* Links styles */
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#links ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    padding: 0px 36px; /* Added missing 'px' */
+}
+
+#links a {
+    display: inline-block;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    width: 250px;
+}
+
+/* PixContent styles */
+#pixContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: center;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    outline: 1px solid var(--main-color);
+    transition: 0.5s;
+}
+
+#pixContent svg {
+    width: 13px;
+}
+
+#pixContent span {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+#pixContent span svg {
+    margin-top: 2px;
+    width: 15px;
+}
+
+#pixContent:hover {
+    cursor: inherit;
+}
+
+/* Social styles */
+#social ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#social svg {
+    width: 30px;
+}
+
+/* Footer styles */
+footer {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+footer span {
+    background-color: rgba(255, 255, 255, 0.039);
+    border-radius: 99px;
+    padding: 5px 15px;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.357);
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply fadeIn animation to elements with the .fade-in class */
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+/* Media query for larger screens */
+@media (min-width: 700px) {
+    * {
+        cursor: url('../assets/main-cursor.svg'), auto;
+    }
+
+    body {
+        background: url(../assets/bg-image.svg) repeat-y center/cover;
+        min-height: 100vh;
+    }
+
+    #toggleTheme svg {
+        display: block;
+    }
+
+    #container {
+        padding: 5vh 1%;
+        transition: none;
+        background-color: rgba(255, 255, 255, 0.023);
+    }
+
+    #profile span a:hover {
+        transition: 0.4s;
+        outline: none;
+        opacity: 0.8;
+    }
+
+    #profile span a:focus {
+        text-shadow: 1px 1px 0.3em var(--main-hover-color);
+        transition: 0.2s;
+        outline: none;
+        opacity: 0.8;
+    }
+
+    .aboutMe {
+        background: rgba(4, 8, 18, 0.766);
+    }
+
+    #links a {
+        transition: 1s ease;
+    }
+
+    #links a:hover {
+        background-color: var(--main-color);
+        box-shadow: 0 0 0.6em 0 var(--main-hover-color);
+        transition: 0.2s;
+        box-shadow: 0 0 0.5em 0 var(--main-color);
+    }
+
+    #links a:focus {
+        outline: none;
+        box-shadow: 0 0 0.9em 0 var(--main-hover-color);
+        transition: 0.1s;
+    }
+
+    #pixContent:hover {
+        box-shadow: 0 0 0.5em 0 var(--main-color);
+        transition: 0.2s;
+        cursor: url('../assets/main-cursor.svg');
+    }
+
+    footer {
+        margin-bottom: 10px;
+    }
+
+    footer span {
+        transition: 0.5s;
+    }
+
+    footer span:hover {
+        color: rgba(255, 255, 255, 0.761);
+        transition: 0.5s;
+    }
+}
