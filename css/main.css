@@ -18,7 +18,7 @@
 
 body,
 * {
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 body {
@@ -39,11 +39,10 @@ body {
     margin: auto;
     width: 360px;
     padding: 1vh 1%;
-    padding: 30px;
+    padding: 0px 10px 30px 10px;
     border-radius: 25px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     max-height: 747px;
-
 }
 
 #profile {
@@ -58,7 +57,7 @@ body {
     box-shadow: 0 0 1em 0 rgba(93, 189, 147, 0.215);
     /* transition: 0.5s ease-in-out; */
     transform: scale(0.9);
-    margin-top: 10px;
+    margin-top: -6px;
 }
 
 #profile p {
@@ -226,16 +225,8 @@ footer span {
 }
 
 
-
-
 #toggleTheme svg {
     display: none;
-    position: absolute;
-    top: 6%;
-    left: 76%;
-    transform: translate(-50%, 0);
-    width: 50px;
-    height: 50px;
 }
 
 
