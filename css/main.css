@@ -39,7 +39,7 @@ body {
     margin: auto;
     width: 360px;
     padding: 1vh 1%;
-    padding: 0px 10px 30px 10px;
+    padding: 10px 10px 30px 10px;
     border-radius: 25px;
     /* transition: 0.5s; */
     /* max-height: 747px; */
@@ -186,7 +186,7 @@ body {
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
 }
 
@@ -259,7 +259,7 @@ footer span {
         padding: 5vh 1%;
         transition: none;
         background-color: rgba(255, 255, 255, 0.023);
-        max-height: none;
+        max-height: 767px;
         padding-top: 0%;
     }
 
@@ -312,9 +312,10 @@ footer span {
         cursor: url('../assets/main-cursor.svg');
     }
 
-    /* footer {
-        margin-bottom: 10px;
-    } */
+    footer {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
 
     footer span {
         transition: 0.5s;
