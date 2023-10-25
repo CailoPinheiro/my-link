@@ -42,7 +42,7 @@ body {
     padding: 0px 10px 30px 10px;
     border-radius: 25px;
     /* transition: 0.5s; */
-    max-height: 747px;
+    /* max-height: 747px; */
 }
 
 #profile {
@@ -186,7 +186,7 @@ body {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
 }
 
