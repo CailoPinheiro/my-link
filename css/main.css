@@ -16,11 +16,6 @@
     --pix-check-color: #8fdca7;
 }
 
-body,
-* {
-    /* transition: 0.5s; */
-}
-
 body {
     /* background-color: #010912; */
     background: url(../assets/bg-image.svg) no-repeat center;
@@ -244,7 +239,7 @@ footer span {
 
 
     #toggleTheme svg {
-        display: block;
+        display: none;
         position: absolute;
         top: 7%;
         left: 76%;
